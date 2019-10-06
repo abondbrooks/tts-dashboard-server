@@ -24,7 +24,7 @@ public class ProductController {
         return productRepository.findById(id);
     }
 
-    @PostMapping("/products")
+    @PostMapping("/products/post")
     public Product createProduct(@Valid @RequestBody Product product) {
         return productRepository.save(product);
     }
